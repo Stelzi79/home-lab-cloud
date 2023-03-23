@@ -1,0 +1,243 @@
+{
+  "main": {
+    "id": "2e3f450edf6efc84",
+    "type": "split",
+    "children": [
+      {
+        "id": "9240b5d43749b72c",
+        "type": "split",
+        "children": [
+          {
+            "id": "47ef4bb2259469a0",
+            "type": "tabs",
+            "dimension": 55.717054263565885,
+            "children": [
+              {
+                "id": "9344a7fa552b3ce6",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {}
+                },
+                "group": "d96f3e9687c03d61"
+              }
+            ]
+          },
+          {
+            "id": "7e33cfa6ea4ca99e",
+            "type": "tabs",
+            "dimension": 44.282945736434115,
+            "children": [
+              {
+                "id": "549d2551d3e87bad",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {}
+                },
+                "group": "d96f3e9687c03d61"
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3cf078f9e6a01eb2",
+    "type": "split",
+    "children": [
+      {
+        "id": "56962ccfe2dfc469",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "36a5b5cd483db0eb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d77579b420bce2f6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c7d2d4472a50ba26",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "01465783dee3a851",
+            "type": "leaf",
+            "state": {
+              "type": "mk-file-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 262.5
+  },
+  "right": {
+    "id": "198db856c0e6e6a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "23e328135efa21f8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4a8e7164fa04d428",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d9bdfef777a0d1e6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "847f058571df3901",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2d580c9ca01625d6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "f31e2bd20cdbdaee",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "b8ca58f2e35d2800",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "ea195b5f7fe52282",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "0feaccb56270cb6d",
+            "type": "leaf",
+            "state": {
+              "type": "online.larslockefeer.obsidian-plugin-todo",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 237.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "zk-prefixer:Create new unique note": false,
+      "workspaces:Manage workspace layouts": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-metatable:Metatable": false,
+      "meld-encrypt:Create new encrypted note": false,
+      "obsidian-rich-links:Rich Links": false
+    }
+  },
+  "active": "ea195b5f7fe52282",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "New Stuff/Software.md",
+    "files",
+    "Technologies/Kubernetes/kubeadm.md",
+    "Technologies/Ansible/01 Install and Setup.md",
+    "Windows Issues/Setup Hyper-V UserGroups.md",
+    "Technologies/Docker/LocalDockerHostVM.md",
+    "Technologies/Docker/Jellyfin.md",
+    "Technologies/Ansible/03 Playbook.md",
+    "Technologies/Ansible/02 Inventory.md",
+    "home.md",
+    "New Stuff/Kubernetes.md",
+    "Untitled.canvas",
+    "Untitled 20230309 050448.encrypted",
+    "Secrets/Passwords.encrypted",
+    "Secrets/API Secrets.encrypted",
+    "Local Service Infrastructure/Full Bootstrap.md",
+    "Games/Factorio.md",
+    "Games/SpaceEngineers.md",
+    "Technologies/Kubernetes/Hirarchical Namespace.md",
+    "Technologies/Kubernetes/zzz Archive/K8s Cluster mit Multipass.md",
+    "Technologies/Kubernetes/zzz Archive/K8S Cluster with Harvester.md",
+    "Technologies/Ubuntu/Setup SSH.md",
+    "Untitled 1.md",
+    "New Stuff/Dotnet CSharp.md",
+    "Technologies/Kubernetes/Minikube.md",
+    "Technologies/Kubernetes/kubectl.md"
+  ]
+}

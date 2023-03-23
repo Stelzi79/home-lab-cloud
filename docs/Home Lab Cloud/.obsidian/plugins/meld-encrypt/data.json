@@ -1,0 +1,11 @@
+{
+  "confirmPassword": true,
+  "rememberPassword": true,
+  "rememberPasswordTimeout": 30,
+  "featureWholeNoteEncrypt": {
+    "addRibbonIconToCreateNote": true
+  },
+  "featureInplaceEncrypt": {
+    "expandToWholeLines": false
+  }
+}
