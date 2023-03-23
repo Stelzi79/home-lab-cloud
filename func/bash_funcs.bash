@@ -61,7 +61,9 @@ function print_heading() {
 	fi
 
 	heading="$1"
-	count=${#heading}
+	
+	count=`echo $heading | awk '{print length}'`
+
 	filler=''
 	n=0
 	while [ $n -lt $((count)) ]; do
