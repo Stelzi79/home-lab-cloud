@@ -34,7 +34,6 @@ function do_playbooks() {
 		return 1
 	fi
 	playbook="$1"
-	#playbook="${BASH_SOURCE[0]/".bash"/".yaml"}"
 	heading="== 🚧🚧🚧 applying '$playbook' to localhost ... =="
 
 	count=${#heading}
@@ -48,4 +47,14 @@ function do_playbooks() {
 	echo -e "$filler\n$heading\n$filler"
 
 	ansible-playbook "$playbook" -i "Ansible/hosts.yaml"
+}
+
+function print_heading() {
+	if [[ -z $1 ]]; then
+		echo "ERROR: print_heading requires "
+		return 1
+	fi
+	playbook="$1"
+
+
 }
