@@ -51,10 +51,23 @@ function do_playbooks() {
 
 function print_heading() {
 	if [[ -z $1 ]]; then
-		echo "ERROR: print_heading requires "
+		echo "ERROR: print_heading requires a heading string!"
 		return 1
 	fi
-	playbook="$1"
+	if [[ -z $2 ]]; then
+		filler_char=$2
+	else
+		filler_char="="
+	fi
 
+	heading="$1"
+	count=${#heading}
+	filler=''
+	n=0
+	while [ $n -lt $((count)) ]; do
+		n=$((n + 1))
+		filler="${filler}${filler_char}"
+	done
+	echo -e "$filler\n$heading\n$filler"
 
 }
