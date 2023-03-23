@@ -95,17 +95,8 @@
               "type": "starred",
               "state": {}
             }
-          },
-          {
-            "id": "01465783dee3a851",
-            "type": "leaf",
-            "state": {
-              "type": "mk-file-view",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -125,6 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -141,6 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +155,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "index.md"
+              }
             }
           },
           {
@@ -221,9 +216,11 @@
       "obsidian-rich-links:Rich Links": false
     }
   },
-  "active": "01465783dee3a851",
+  "active": "36a5b5cd483db0eb",
   "lastOpenFiles": [
+    "Untitled.md",
     "index.md",
+    "Untitled",
     "New Stuff/Software.md",
     "files",
     "Technologies/Kubernetes/kubeadm.md",
