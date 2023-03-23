@@ -54,10 +54,10 @@ function print_heading() {
 		echo "ERROR: print_heading requires a heading string!"
 		return 1
 	fi
-	if [[ -z $2 ]]; then
+	if [[ -n $2 ]]; then
 		filler_char=$2
 	else
-		filler_char="="
+		filler_char=''
 	fi
 
 	heading="$1"
