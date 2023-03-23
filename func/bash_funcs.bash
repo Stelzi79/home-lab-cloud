@@ -62,7 +62,11 @@ function print_heading() {
 
 	heading="$1"
 	
-	count=`echo $heading | awk '{print length}'`
+	#count=`echo $heading | awk '{print length}'`
+
+	printf -v _ %s%n "$heading" count
+
+	count=${#heading}
 
 	filler=''
 	n=0
