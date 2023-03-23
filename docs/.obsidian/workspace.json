@@ -16,8 +16,13 @@
                 "id": "9344a7fa552b3ce6",
                 "type": "leaf",
                 "state": {
-                  "type": "empty",
-                  "state": {}
+                  "type": "markdown",
+                  "state": {
+                    "file": "index.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  }
                 },
                 "group": "d96f3e9687c03d61"
               }
@@ -32,8 +37,13 @@
                 "id": "549d2551d3e87bad",
                 "type": "leaf",
                 "state": {
-                  "type": "empty",
-                  "state": {}
+                  "type": "markdown",
+                  "state": {
+                    "file": "index.md",
+                    "mode": "preview",
+                    "backlinks": true,
+                    "source": false
+                  }
                 },
                 "group": "d96f3e9687c03d61"
               }
@@ -114,6 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -130,6 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +163,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "index.md"
+              }
             }
           },
           {
@@ -210,9 +224,9 @@
       "obsidian-rich-links:Rich Links": false
     }
   },
-  "active": "ea195b5f7fe52282",
+  "active": "9344a7fa552b3ce6",
   "lastOpenFiles": [
-    "Untitled.md",
+    "index.md",
     "New Stuff/Software.md",
     "files",
     "Technologies/Kubernetes/kubeadm.md",
