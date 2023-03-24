@@ -77,9 +77,10 @@ function print_heading() {
 
 	filler=''
 	n=0
-	c1=(${#heading} + 2)
-	c2=0
+	c1=$((${#heading} + 2))
 	#printf -v _ %s%n "$heading" c1
+
+	c2=0
 	while [ $c2 -lt $c1 ]; do
 		n=$((n + 1))
 		filler="${filler}${filler_char}"
