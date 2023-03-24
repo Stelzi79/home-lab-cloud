@@ -49,6 +49,13 @@ function do_playbooks() {
 	ansible-playbook "$playbook" -i "Ansible/hosts.yaml"
 }
 
+
+function strU8DiffLen() {
+  local -i bytlen
+  printf -v _ %s%n "$1" bytlen
+ 	return $(( bytlen - ${#1} ))
+}
+
 function print_heading() {
 	if [[ -z $1 ]]; then
 		echo "ERROR: print_heading requires a heading string!"
@@ -70,7 +77,7 @@ function print_heading() {
 
 	filler=''
 	n=0
-	while [ $n -lt $((count)) ]; do
+	while [ $n -lt $((count + 2)) ]; do
 		n=$((n + 1))
 		filler="${filler}${filler_char}"
 	done
