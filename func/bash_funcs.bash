@@ -68,26 +68,13 @@ function print_heading() {
 	fi
 
 	heading="$1"
-	
-	#count=`echo $heading | awk '{print length}'`
-
-	printf -v _ %s%n "$heading" count
-
-	#count=${#heading}
-
 	filler=''
-	n=0
-	c1=$((${#heading} + 2))
-	#printf -v _ %s%n "$heading" c1
+	str=$heading
+	for (( i=0 ; i < ${#str} ; i++ )) {
+    	arr[$i]=${str:i:1}
+			filler="${filler}${filler_char}"
+	}
 
-	c2=0
-	while [ $c2 -lt $c1 ]; do
-		n=$((n + 1))
-		filler="${filler}${filler_char}"
-		printf -v _ %s%n "$filler"  c2
-		#c2=${#filler}
-		echo $c1=$c2
-	done
 	echo -e "$filler\n$heading\n$filler"
 
 }
