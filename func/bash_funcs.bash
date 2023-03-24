@@ -73,13 +73,19 @@ function print_heading() {
 
 	printf -v _ %s%n "$heading" count
 
-	count=${#heading}
+	#count=${#heading}
 
 	filler=''
 	n=0
-	while [ $n -lt $((count + 2)) ]; do
+	c1=(${#heading} + 2)
+	c2=0
+	#printf -v _ %s%n "$heading" c1
+	while [ $c2 -lt $c1 ]; do
 		n=$((n + 1))
 		filler="${filler}${filler_char}"
+		printf -v _ %s%n "$filler"  c2
+		#c2=${#filler}
+		echo $c1=$c2
 	done
 	echo -e "$filler\n$heading\n$filler"
 
