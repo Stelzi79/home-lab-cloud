@@ -1,0 +1,19 @@
+- name: Check if ansible can list this local directory in WSL bash
+  hosts: localhost
+  tasks:
+    - name: 🚧 List files in current directory
+      ansible.builtin.raw: |
+        #$PSStyle.OutputRendering = 'PlainText'
+        #Get-Vm
+      register: result
+      changed_when: false
+      args:
+        executable: "/mnt/c/Users/stelz/AppData/Local/Microsoft/WindowsApps/pwsh.exe -nologo"
+    - name: 🖨️ Print result
+      when: result.stdout_lines
+      ansible.builtin.debug:
+        msg: "{{ result.stdout_lines }}"
+    - name: 🖨️ Print error
+      when: result.stderr
+      ansible.builtin.debug:
+        msg: "{{ result.stderr }}"

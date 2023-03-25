@@ -1,0 +1,4 @@
+localhost:
+  hosts:
+    win01:
+      ansible_connection: local
