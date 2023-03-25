@@ -69,12 +69,11 @@ function print_heading() {
 	fi
 
 	if [[ -n $3 ]]; then
-		offset=$((3))
+		offset=$3
 	else
 		offset=0
 	fi
-	echo "offset: $offset ($3)"
-
+	
 	heading="$1"
 	filler=''
 	count=${#heading}
