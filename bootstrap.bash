@@ -3,6 +3,6 @@
 . ./func/bash_funcs.bash
 
 
-print_heading "## Bootstrapping: Home Lab Cloud ##" "=" 0
+print_heading "## Bootstrapping: Home Lab Cloud ##" "=" 1
 
 

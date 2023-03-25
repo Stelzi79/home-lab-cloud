@@ -61,19 +61,29 @@ function print_heading() {
 		echo "ERROR: print_heading requires a heading string!"
 		return 1
 	fi
+
 	if [[ -n $2 ]]; then
 		filler_char=$2
 	else
 		filler_char=''
 	fi
 
+	if [[ -n $3 ]]; then
+		offset=$((3))
+	else
+		offset=0
+	fi
+	echo "offset: $offset ($3)"
+
 	heading="$1"
 	filler=''
-	str=$heading
-	for (( i=0 ; i < ${#str} ; i++ )) {
-    	arr[$i]=${str:i:1}
-			filler="${filler}${filler_char}"
-	}
+	count=${#heading}
+	filler=''
+	n=0
+	while [ $n -lt $((count + offset)) ]; do
+		n=$((n + 1))
+		filler="${filler}${filler_char}"
+	done
 
 	echo -e "$filler\n$heading\n$filler"
 
