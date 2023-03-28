@@ -1,18 +1,24 @@
 - name: Check if ansible can list this local directory in WSL bash
   hosts: localhost
   tasks:
+    - name: 🚧 Prepair pwsh for operations
+      ansible.builtin.raw: |
+        Install-Module powershell-yaml -AcceptLicense -force
+      changed_when: false
+      args:
+        executable: "$LOCALAPPDATA/Microsoft/WindowsApps/pwsh.exe -nologo"
     - name: 🚧 List files in current directory
       ansible.builtin.raw: |
-        #$PSStyle.OutputRendering = 'PlainText'
-        #Get-Vm
+        $PSStyle.OutputRendering = 'PlainText'
+        get-vm Srv-021_3CX | select State | ConvertTo-Yaml
       register: result
       changed_when: false
       args:
-        executable: "/mnt/c/Users/stelz/AppData/Local/Microsoft/WindowsApps/pwsh.exe -nologo"
+        executable: "$LOCALAPPDATA/Microsoft/WindowsApps/pwsh.exe -nologo"
     - name: 🖨️ Print result
-      when: result.stdout_lines
+      when: result.stdout
       ansible.builtin.debug:
-        msg: "{{ result.stdout_lines }}"
+        msg: "{{ result.stdout }}"
     - name: 🖨️ Print error
       when: result.stderr
       ansible.builtin.debug:
