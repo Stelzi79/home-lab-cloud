@@ -1,6 +1,13 @@
 - name: Check if ansible can list this local directory in WSL bash
   hosts: localhost
   tasks:
+    - name: 🚧 PTest cmd.exe for operations
+      ansible.builtin.shell: |
+        dir
+      changed_when: false
+      register: result_cmd
+      args:
+        executable: "/mnt/c/WINDOWS/system32/cmd.exe"
     - name: 🚧 Prepair pwsh for operations
       ansible.builtin.raw: |
         Install-Module powershell-yaml -AcceptLicense -force
@@ -16,10 +23,14 @@
       args:
         executable: "$LOCALAPPDATA/Microsoft/WindowsApps/pwsh.exe -nologo"
     - name: 🖨️ Print result
-      when: result.stdout
+      when: result.stdout_lines[0]
       ansible.builtin.debug:
-        msg: "{{ result.stdout }}"
+        var: result.stdout_lines[0]
+    - name: 🖨️ Print result2
+      when: result_cmd
+      ansible.builtin.debug:
+        var: result_cmd
     - name: 🖨️ Print error
       when: result.stderr
       ansible.builtin.debug:
-        msg: "{{ result.stderr }}"
+        var: result.stderr
