@@ -1,7 +1,7 @@
 ---
 title: Index
 created: 2023-03-23T23:29:28+01:00
-updated: 2023-06-11T02:55:42+02:00
+updated: 2023-06-11T03:00:06+02:00
 ---
 # Home Lab Cloud
 
@@ -19,10 +19,9 @@ updated: 2023-06-11T02:55:42+02:00
 ### Ten-Ten Aubach
 *10.10.0.0/16*
 
-| *CodeName*      | *IPv4*      | *Hostname* | *Description*    |
-| --------------- | ----------- | ---------- | ---------------- |
-| Zero-TwoHundred | 10.10.0.200 | WinMain    | Haupt Windows PC | 
-
+| *CodeName*      | *IPv4*      | *Hostname* | *Description*           |
+| --------------- | ----------- | ---------- | ----------------------- |
+| Zero-TwoHundred | 10.10.0.200 | WinMain    | Haupt Windows PC-Client |
 
 ### Ten-Twenty Asing
 *10.20.0.0/16*
