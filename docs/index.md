@@ -1,7 +1,7 @@
 ---
 title: Index
 created: 2023-03-23T23:29:28+01:00
-updated: 2023-06-11T03:07:02+02:00
+updated: 2023-08-03T17:31:11+02:00
 ---
 # Home Lab Cloud
 
